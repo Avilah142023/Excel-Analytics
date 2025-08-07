@@ -5,7 +5,7 @@ const xlsx = require("xlsx");
 const router = express.Router();
 const upload = multer({ storage: multer.memoryStorage() });
 const { protect } = require("../middleware/authMiddleware");
-const File = require("../models/File"); // ✅ Ensure File model is imported
+const File = require("../models/file"); // ✅ Ensure File model is imported
 
 // Upload Excel file
 router.post("/upload", upload.single("file"), (req, res) => {
