@@ -28,8 +28,7 @@ export default function Landing() {
       {/* Navbar */}
       <header className="flex justify-between items-center px-6 py-4 bg-white shadow-sm">
         <div className="flex items-center gap-2 text-lg text-teal-700 font-bold">
-  <img src="/icons/logo.png" alt="Chart Icon" className="w-5 h-5" />
-  Excel Analytics
+<img src="/logo.png" alt="Logo" className="w-8 h-8"/>Excel Analytics
 </div>
         <button
           onClick={handleStart}

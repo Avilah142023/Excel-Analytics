@@ -232,8 +232,7 @@ await axios.post(
     <aside className="w-64 bg-white shadow-md border-r flex flex-col justify-between">
       <div>
         <div className="flex items-center gap-2 text-lg text-teal-700 font-bold">
-  <img src="/icons/logo.png" alt="Chart Icon" className="w-5 h-5" />
-  Excel Analytics
+<img src="/logo.png" alt="Logo" className="w-8 h-8" />Excel Analytics
 </div>
         <nav className="mt-4 space-y-1 px-4 text-sm">
           <a href="#" className="block py-2 px-3 rounded text-teal-700 font-semibold bg-blue-50">Dashboard</a>

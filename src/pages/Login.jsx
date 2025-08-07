@@ -29,8 +29,7 @@ export default function Login() {
       <div className="w-full max-w-md bg-white p-8 rounded-xl shadow-md">
         <div className="mb-6 text-center">
           <div className="text-3xl font-bold text-teal-700">
-            <img src="/icons/logo.png" alt="Chart Icon" className="w-12 h-12 align-bottom" />
-            Excel Analysis</div>
+<img src="/logo.png" alt="Logo" className="w-8 h-8" /> Excel Analysis</div>
           <p className="text-gray-500 text-sm mt-1">Sign in to your analytics workspace</p>
         </div>
 
