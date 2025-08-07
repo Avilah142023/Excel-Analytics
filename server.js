@@ -26,15 +26,14 @@ app.use(cors({
 }));
 
 
-
 app.use(express.json());
-app.use('/api/charts', chartRoutes);
-
 
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/files", fileRoutes);
 app.use("/api/admin", adminRoutes);
+app.use('/api/charts', chartRoutes);
+
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI)
