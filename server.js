@@ -16,13 +16,15 @@ dotenv.config();
 
 const app = express();
 
-// CORS setup: allows frontend from port 5173
+
+
 app.use(cors({
-  origin: ["http://localhost:5173", "deft-klepon-fdc7d6.netlify.app"],
+  origin: ["http://localhost:5173", "https://deft-klepon-fdc7d6.netlify.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
 }));
+
 
 
 app.use(express.json());
