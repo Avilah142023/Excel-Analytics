@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { protect } = require("../middleware/authMiddleware");
 const User = require("../models/User");
-const File = require("../models/File");
+const File = require("../models/file");
 const Chart = require("../models/chart");
 
 // Middleware to check if user is admin
