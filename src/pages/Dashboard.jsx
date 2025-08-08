@@ -57,11 +57,12 @@ export default function Dashboard() {
   useEffect(() => {
   const fetchDownloads = async () => {
     try {
-     const res = await fetch(`${import.meta.env.VITE_API_URL}/api/charts/user-downloads`, {
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-      });
+     const res = await fetch(`${import.meta.env.VITE_API_URL}/charts/user-downloads`, {
+  headers: {
+    Authorization: `Bearer ${localStorage.getItem("token")}`,
+  },
+});
+
       const data = await res.json();
       setDownloads(data);
     } catch (err) {
