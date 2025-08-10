@@ -27,12 +27,12 @@ export default function Register() {
       body.secretKey = secretKey;
     }
 
-    const res = await fetch(import.meta.env.VITE_API_URL + "/api/auth/register", {
+    const res = await fetch(import.meta.env.VITE_API_URL + "/auth/register", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ name, email, password, confirmPassword, role, secretKey }),
+});
 
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body),
-    });
 
     const data = await res.json();
 
